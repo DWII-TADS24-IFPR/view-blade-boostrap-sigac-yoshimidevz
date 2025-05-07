@@ -14,7 +14,7 @@ class AlunoController extends Controller
             ->orderBy('nome')
             ->paginate(10);
 
-        return response()->json($alunos);
+        return View('teste');
     }
 
     public function store(Request $request)
